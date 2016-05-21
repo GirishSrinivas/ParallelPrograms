@@ -1,0 +1,25 @@
+Advance Computer Architecture
+
+Login
+
+Girish-MacBook:~ Girish$ ssh gsrinivas@tusker.unl.edu
+
+Step -1 module load compiler/gcc/4.9 openmpi/1.8
+Step -2 run mpicc
+
+To copy files from host to HCC
+scp /Users/Girish/ACA_Programs/HelloWorld2.c gsrinivas@tusker.unl.edu:/home/csci8150/gsrinivas
+
+To copy files from HCC to host:
+
+
+
+how to install gcc with openmp capabilities:
+brew install gcc --without-multilib
+(or)
+brew reinstall gcc --without-multilib
+
+
+to run openmp programs on mac use:
+gcc-5 –fopenmp –o <out_filename> <input_filename.c>
+(here gcc-5 means gcc is of version 5)
